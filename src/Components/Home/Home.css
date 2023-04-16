@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    background: url("https://lh5.googleusercontent.com/Q_uL1SN3Evm2TLWtDeAt7cvqFPZxK2DMe_o1hExR0El4x-nfE6bdePZaCPHbS2WUsY1-krC4cVmYzJTuPx1EiNI63Lv1wxt2dKs6veSz1iRRoeH0Ec6uepIfnUf6bQJN73ZX0P-_HOvVRtvhXaU6NdAK1o05hYeQgDbFGl23NKdkArEtk5f02nH04dHdHQ");
+}
+#contents{
+    margin-top: 10%;
+    width: 100%;
+    height: fit-content;
+}
+#title{
+    width: 100%;
+    padding: 2em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-text{
+    font-size: 3em;
+    color: white;
+}
+#search-box-div{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-box{
+    padding: 0.8em;
+    font-size: 1em;
+    font-family: inherit;
+    width: 60%;
+    color: rgb(255, 255, 255);
+    background-color: rgba(19, 19, 19, 0.466);
+    border-radius: 10px;
+    border-color: rgb(116, 116, 116);
+    margin-right: 1em;
+}
+
+#search-box::placeholder{
+    color: rgb(226, 226, 226);
+}
+#search-btn{
+    height: 3em;
+    width: 2em;
+    background-color: rgb(233, 233, 233);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+#search-btn:hover{
+    border: 2px solid rgb(138, 85, 189);
+    cursor: pointer;
+}
