@@ -34,7 +34,7 @@ const Home = () => {
         <div id="contents">
           <div id="title">
             <div id="title-text">
-              Find available hospitals nearby
+              Find Nearby Hospitals 
             </div>
           </div>
           <div id="search-box-div">

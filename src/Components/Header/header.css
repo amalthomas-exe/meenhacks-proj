@@ -3,7 +3,7 @@
     height: 4em;
     background-color: #d3d3d362;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     position: fixed;
 }
 
@@ -14,4 +14,9 @@
     padding-top: 1.4em;
     font-family: 'Ubuntu', sans-serif;
     color: white;
+}
+
+.logo{
+   margin-left: 2em;
+   margin: 0.5em;
 }

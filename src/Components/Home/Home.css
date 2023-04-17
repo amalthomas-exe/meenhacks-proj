@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@400;500;700&display=swap');
 
 body{
     margin: 0;
     padding: 0;
-    background: url("https://lh5.googleusercontent.com/Q_uL1SN3Evm2TLWtDeAt7cvqFPZxK2DMe_o1hExR0El4x-nfE6bdePZaCPHbS2WUsY1-krC4cVmYzJTuPx1EiNI63Lv1wxt2dKs6veSz1iRRoeH0Ec6uepIfnUf6bQJN73ZX0P-_HOvVRtvhXaU6NdAK1o05hYeQgDbFGl23NKdkArEtk5f02nH04dHdHQ");
+    background: url('../../assets/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -16,7 +16,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'IBM Plex Serif', serif;
 }
 #contents{
     margin-top: 10%;
@@ -35,8 +35,40 @@ body{
 
 #title-text{
     font-size: 3em;
-    color: white;
+    background: #FFFFFF;
+    background: linear-gradient(to right, #FFFFFF 9%, #3b403e 14%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
 }
+
+#title-text:before{
+    content: '';
+    background: #5486d6;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+
+#title-text:hover {
+    background-position: 0;
+   }
+   
+#title-text:hover::before{
+     width: 100%;
+   }
+
 #search-box-div{
     width: 100%;
     height: fit-content;
@@ -60,6 +92,7 @@ body{
 
 #search-box::placeholder{
     color: rgb(226, 226, 226);
+    opacity: 80%;
 }
 #search-btn{
     height: 3em;

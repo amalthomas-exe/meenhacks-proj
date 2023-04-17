@@ -20,39 +20,39 @@ const Form = () => {
         });
         const json = await response.json();
         console.log(json);
-        alert("Hospital added successfully");
         setDetails({name:"", address:"", city:"", pincode:"", email:"", phone:"", website:"", genbeds:"", icubeds:"", neobeds:""});
+        alert("Hospital added successfully");
     }
 
     return(
         <div className='wrapper'>
-        <form>
+        <form name='form'>
             <label>Name</label>
-            <input name="name"  onChange={updateDetails}/>
+            <input name="name" value={details.name}  onChange={updateDetails}/>
 
             <label>Address</label>
-            <textarea name="address" onChange={updateDetails}/>
+            <textarea name="address" value={details.address} onChange={updateDetails}/>
 
             <label>City</label>
-            <input name="city" onChange={updateDetails}/>
+            <input name="city" value={details.city} onChange={updateDetails} />
 
             <label>Pin Code</label>
-            <input name="pincode" onChange={updateDetails}/>
+            <input name="pincode" value={details.pincode} onChange={updateDetails}/>
 
             <label>Email</label>
-            <input name="email" onChange={updateDetails}/>
+            <input name="email" value={details.email} onChange={updateDetails}/>
 
             <label>Phone</label>
-            <input name="phone" onChange={updateDetails}/>
+            <input name="phone" value={details.phone} onChange={updateDetails}/>
 
             <label>Website</label>
-            <input name="website" onChange={updateDetails}/>
+            <input name="website" value={details.website} onChange={updateDetails}/>
 
             <label>General Beds</label>
             <input name="genbeds" onChange={updateDetails}/>
 
             <label>ICU beds</label>
-            <input name="icubeds" onChange={updateDetails}/>
+            <input name="icubeds" value={details.icubeds} onChange={updateDetails}/>
 
             <label>Neonatal Beds</label>
             <input name="neobeds" onChange={updateDetails}/>
