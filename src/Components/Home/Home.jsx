@@ -13,7 +13,7 @@ const Home = () => {
   }
 
   const  searchHospitals = async ()=>{
-    const response = await fetch("http://127.0.0.1:5000/gethospitals",{
+    const response = await fetch("https://93cb-117-250-228-82.ngrok-free.app/gethospitals",{
       method:"POST",
       headers:{
         'Content-Type':"application/json"

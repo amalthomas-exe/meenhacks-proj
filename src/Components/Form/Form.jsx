@@ -11,7 +11,7 @@ const Form = () => {
 
     const submitDetails = async (e) => {
         e.preventDefault();
-        const response = await fetch("http://127.0.0.1:5000/addhospital",{
+        const response = await fetch("https://93cb-117-250-228-82.ngrok-free.app/addhospital",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json"
@@ -20,6 +20,8 @@ const Form = () => {
         });
         const json = await response.json();
         console.log(json);
+        alert("Hospital added successfully");
+        setDetails({name:"", address:"", city:"", pincode:"", email:"", phone:"", website:"", genbeds:"", icubeds:"", neobeds:""});
     }
 
     return(
