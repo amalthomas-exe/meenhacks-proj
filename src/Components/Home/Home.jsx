@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import HospitalCards from '../HospitalCards/HospitalCards';
 import "./Home.css"
 
 const Home = () => {
@@ -42,15 +43,19 @@ const Home = () => {
             </div>
           </div>
         </div>
-        { (availableHospitals.length==0)?"":
           <div id="search-results">
           <div id="results-title">
             Availabe hospitals
           </div>
           <div id="results-cards">
+            {
+              availableHospitals.map((hospital)=>{
+                return <HospitalCards key={hospital._id} hospital={hospital} />
+              }
+              )
+            }
           </div>
           </div>
-        }
       </section>
     </div>
   )

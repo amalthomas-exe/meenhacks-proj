@@ -1,0 +1,57 @@
+#card{
+    margin-bottom: 1em;
+    width:100%;
+    height:fit-content;
+    background-color: #c9c9c9;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#name-and-location{
+    display: flex;
+    flex-direction: column;
+}
+
+#name{
+    font-size: 1.5em;
+    color: rgb(54, 54, 54)
+}
+
+#location{
+    font-size: 1em;
+    color: rgb(88, 88, 88);
+}
+
+#location-icon{
+    width: 1em;
+    height: 1em;
+    margin-right: 8px;
+}
+#hosp-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.beds-info{
+    padding: 0.2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.beds-name{
+    color: rgb(54, 54, 54);
+    margin-right: 10px;
+}
+
+.beds-count{
+    color: rgb(88, 88, 88)
+}
+
+
+
