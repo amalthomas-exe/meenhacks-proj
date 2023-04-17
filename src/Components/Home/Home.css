@@ -3,16 +3,20 @@
 body{
     margin: 0;
     padding: 0;
+    background: url("https://lh5.googleusercontent.com/Q_uL1SN3Evm2TLWtDeAt7cvqFPZxK2DMe_o1hExR0El4x-nfE6bdePZaCPHbS2WUsY1-krC4cVmYzJTuPx1EiNI63Lv1wxt2dKs6veSz1iRRoeH0Ec6uepIfnUf6bQJN73ZX0P-_HOvVRtvhXaU6NdAK1o05hYeQgDbFGl23NKdkArEtk5f02nH04dHdHQ");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 #home{
     width: 100%;
-    height: fit-content;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
-    background: url("https://lh5.googleusercontent.com/Q_uL1SN3Evm2TLWtDeAt7cvqFPZxK2DMe_o1hExR0El4x-nfE6bdePZaCPHbS2WUsY1-krC4cVmYzJTuPx1EiNI63Lv1wxt2dKs6veSz1iRRoeH0Ec6uepIfnUf6bQJN73ZX0P-_HOvVRtvhXaU6NdAK1o05hYeQgDbFGl23NKdkArEtk5f02nH04dHdHQ");
 }
 #contents{
     margin-top: 10%;
