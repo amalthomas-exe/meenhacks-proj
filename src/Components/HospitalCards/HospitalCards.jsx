@@ -11,7 +11,7 @@ const HospitalCards = (props) => {
                 </div>
                 <div id="location">
                 <i id="location-icon" class="fa-solid fa-location-dot"></i>
-                {props.hospital.address}
+                <div id="address">{props.hospital.address}</div>
                 </div>
             </div>
             <div id="hosp-info">

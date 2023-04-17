@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from bson.objectid import ObjectId
 from flask_cors import CORS, cross_origin
 import pymongo
 
@@ -37,6 +38,15 @@ def addhospital():
         x = hospitals.insert_one(hosp_details)
         if x.acknowledged:
             return jsonify({"status":200,"message":"Hospital Added Successfully"})
+
+@app.route("/gethospitalinfo", methods=["POST"])
+def gethospitalinfo():
+    if request.method=="POST":
+        hosp_id = request.json["id"]
+        hosp_info = hospitals.find_one({"_id":ObjectId(hosp_id)})
+        print(hosp_info)
+        hosp_info["_id"] = str(hosp_info["_id"])
+        return jsonify({"status":200,"hosp_info":hosp_info})
 
 
 if __name__=="__main__":

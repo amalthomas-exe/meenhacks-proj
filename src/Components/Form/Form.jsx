@@ -11,7 +11,7 @@ const Form = () => {
 
     const submitDetails = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://33ac-117-250-228-82.ngrok-free.app/addhospital",{
+        const response = await fetch("https://b358-117-250-228-82.ngrok-free.app/addhospital",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json"
