@@ -14,13 +14,13 @@ const Home = () => {
   }
 
   const searchHospitals = async () => {
-    const response = await fetch("https://b358-117-250-228-82.ngrok-free.app/gethospitals", {
+    const response = await fetch("https://4040-117-250-228-82.ngrok-free.app/gethospitals", {
       method: "POST",
       headers: {
         'Content-Type': "application/json"
       },
       body: JSON.stringify({
-        city: city
+        city: city.toLowerCase()
       })
     });
     const json = await response.json();

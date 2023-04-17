@@ -26,7 +26,7 @@ def addhospital():
     if request.method=="POST":
         name = request.json["name"]
         address = request.json["address"]
-        city = request.json["city"]
+        city = request.json["city"].lower()
         email = request.json["email"]
         phone = request.json["phone"]
         pincode = request.json["pincode"]

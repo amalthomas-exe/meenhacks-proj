@@ -11,7 +11,7 @@ const Form = () => {
 
     const submitDetails = async (e) => {
         e.preventDefault();
-        const response = await fetch("https://b358-117-250-228-82.ngrok-free.app/addhospital",{
+        const response = await fetch("https://4040-117-250-228-82.ngrok-free.app/addhospital",{
             method:"POST",
             headers:{
                 'Content-Type':"application/json"
@@ -48,13 +48,13 @@ const Form = () => {
             <label>Website</label>
             <input name="website" onChange={updateDetails}/>
 
-            <label>Gen Beds</label>
+            <label>General Beds</label>
             <input name="genbeds" onChange={updateDetails}/>
 
             <label>ICU beds</label>
             <input name="icubeds" onChange={updateDetails}/>
 
-            <label>Neo Beds</label>
+            <label>Neonatal Beds</label>
             <input name="neobeds" onChange={updateDetails}/>
             
             <input type="submit" className="submitButton" onClick={submitDetails} />
