@@ -4,8 +4,8 @@ import './header.css'
 const Header = () => {
     return(
         <div className="header">
-            <Link to="/">Home</Link>
-            <Link to="/form">Form</Link>
+            <Link to="/" className='link'>HOME</Link>
+            <Link to="/form" className='link'>FORM</Link>
         </div>
     );
 }

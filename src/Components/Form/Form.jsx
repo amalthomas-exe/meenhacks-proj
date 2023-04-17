@@ -2,6 +2,7 @@ import './form.css'
 
 const Form = () => {
     return(
+        <div className='wrapper'>
         <form>
             <label>Name</label>
             <input name="name"  />
@@ -32,6 +33,7 @@ const Form = () => {
             
             <input type="submit" className="submitButton" />
       </form>
+      </div>
     );
 }
 
