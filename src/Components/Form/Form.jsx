@@ -23,6 +23,7 @@ const Form = () => {
     }
 
     return(
+        <div className='wrapper'>
         <form>
             <label>Name</label>
             <input name="name"  onChange={updateDetails}/>
@@ -56,6 +57,7 @@ const Form = () => {
             
             <input type="submit" className="submitButton" onClick={submitDetails} />
       </form>
+      </div>
     );
 }
 
