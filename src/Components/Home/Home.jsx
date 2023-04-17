@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 import HospitalCards from '../HospitalCards/HospitalCards';
 import "./Home.css"
 
@@ -12,14 +13,14 @@ const Home = () => {
     console.log(city)
   }
 
-  const  searchHospitals = async ()=>{
-    const response = await fetch("https://93cb-117-250-228-82.ngrok-free.app/gethospitals",{
-      method:"POST",
-      headers:{
-        'Content-Type':"application/json"
+  const searchHospitals = async () => {
+    const response = await fetch("https://33ac-117-250-228-82.ngrok-free.app/gethospitals", {
+      method: "POST",
+      headers: {
+        'Content-Type': "application/json"
       },
-      body:JSON.stringify({
-        city:city
+      body: JSON.stringify({
+        city: city
       })
     });
     const json = await response.json();
@@ -43,19 +44,21 @@ const Home = () => {
             </div>
           </div>
         </div>
-          <div id="search-results">
+        {(availableHospitals.length==0)?"":<div id="search-results">
           <div id="results-title">
             Availabe hospitals
           </div>
           <div id="results-cards">
             {
-              availableHospitals.map((hospital)=>{
-                return <HospitalCards key={hospital._id} hospital={hospital} />
+              availableHospitals.map((hospital) => {
+                return <Link  id="card-link" to={`/details/${hospital._id}`}>
+                  <HospitalCards hospital={hospital} key={hospital._id} />
+                </Link>
               }
               )
             }
           </div>
-          </div>
+        </div>}
       </section>
     </div>
   )
